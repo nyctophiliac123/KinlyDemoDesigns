@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinly | Where being real feels easy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#cbcafe",
+              "on-error-container": "#6e0523",
+              "surface-tint": "#5a5b87",
+              "on-tertiary-fixed": "#454053",
+              "primary-container": "#cbcafe",
+              "surface-container-low": "#f2f4f6",
+              "background": "#f9f9fb",
+              "surface-container-highest": "#dfe3e7",
+              "secondary-container": "#cfe5fc",
+              "on-secondary": "#f6f9ff",
+              "inverse-surface": "#0c0e10",
+              "outline": "#777b7f",
+              "on-tertiary": "#fdf7ff",
+              "surface-container-high": "#e6e8ec",
+              "surface-bright": "#f9f9fb",
+              "tertiary-dim": "#555064",
+              "on-primary-container": "#41416c",
+              "inverse-on-surface": "#9c9d9f",
+              "secondary-fixed-dim": "#c1d7ed",
+              "on-primary-fixed": "#2d2e57",
+              "surface-container-lowest": "#ffffff",
+              "error": "#a8364b",
+              "surface-container": "#eceef1",
+              "outline-variant": "#aeb2b6",
+              "on-surface": "#2e3336",
+              "on-error": "#fff7f7",
+              "on-secondary-fixed-variant": "#495e71",
+              "on-tertiary-fixed-variant": "#615c70",
+              "error-dim": "#6b0221",
+              "primary-fixed-dim": "#bdbcef",
+              "surface": "#f9f9fb",
+              "secondary": "#4c6174",
+              "primary-dim": "#4e4f7b",
+              "tertiary-container": "#ede4fd",
+              "on-tertiary-container": "#575266",
+              "inverse-primary": "#cbcafe",
+              "error-container": "#f97386",
+              "surface-dim": "#d7dadf",
+              "tertiary-fixed-dim": "#ded6ee",
+              "tertiary": "#615c70",
+              "on-primary-fixed-variant": "#4a4b76",
+              "on-primary": "#fbf7ff",
+              "on-background": "#2e3336",
+              "surface-variant": "#dfe3e7",
+              "on-secondary-fixed": "#2c4153",
+              "secondary-dim": "#405568",
+              "primary": "#5a5b87",
+              "on-secondary-container": "#3f5466",
+              "secondary-fixed": "#cfe5fc",
+              "tertiary-fixed": "#ede4fd",
+              "on-surface-variant": "#5b6063"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #f9f9fb;
+        color: #2e3336;
+        scroll-behavior: smooth;
+      }
+      .font-serif { font-family: 'Newsreader', serif; }
+      .signature-gradient {
+        background: linear-gradient(135deg, #5a5b87 0%, #bdbcef 100%);
+      }
+      .soft-glow {
+        box-shadow: 0 20px 40px -15px rgba(46,51,54,0.03);
+      }
+      .asymmetric-card-1 { border-radius: 3rem 1.5rem 3rem 0.5rem; }
+      .asymmetric-card-2 { border-radius: 1.5rem 3rem 0.5rem 3rem; }
+      .asymmetric-card-3 { border-radius: 3rem 3rem 1.5rem 1.5rem; }
+      
+      .hero-gradient {
+        background: radial-gradient(circle at 50% 50%, rgba(203, 202, 254, 0.1) 0%, rgba(249, 249, 251, 0) 70%);
+      }
+      .quote-gradient-soft {
+        background: linear-gradient(135deg, #fdfaf5 0%, #f7f3ff 100%);
+      }
+      .fade-up {
+        animation: fadeUp 1s ease-out forwards;
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9fb]/80 backdrop-blur-xl flex justify-center items-center px-8 py-6">
+<div class="max-w-7xl w-full flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#5a5b87] cursor-pointer hover:opacity-70 transition-opacity duration-400">notes</span>
+<span class="text-3xl font-serif italic text-[#5a5b87] tracking-tight">Kinly</span>
+</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#5a5b87] font-serif font-medium tracking-tight hover:opacity-70 transition-opacity duration-400" href="#">Journal</a>
+<a class="text-[#aeb2b6] font-serif font-medium tracking-tight hover:opacity-70 transition-opacity duration-400" href="#">Reflections</a>
+<button class="ml-4 px-6 py-2 rounded-full signature-gradient text-white font-medium scale-102 transition-transform duration-400 ease-in-out hover:scale-105">Start sharing</button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-40 flex flex-col items-center text-center hero-gradient">
+<div class="relative w-full max-w-4xl fade-up">
+<h1 class="font-serif text-6xl md:text-[5.5rem] text-on-surface leading-[1.1] mb-12">
+                    Where being real <br/><span class="italic text-primary">feels easy.</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mx-auto mb-16 leading-[1.8]">
+                    Share what you don’t usually say — with people who listen, not judge. No pressure. Just honest connection.
+                </p>
+<!-- Email Capture -->
+<div class="w-full max-w-md mx-auto mb-6">
+<form class="flex flex-col sm:flex-row gap-3 p-2 bg-white rounded-full border border-outline-variant/30 soft-glow focus-within:border-primary/40 transition-colors duration-300" onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden'); this.classList.add('opacity-50', 'pointer-events-none');">
+<input class="flex-grow px-6 py-4 bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline text-lg rounded-full" placeholder="Enter your email" required="" type="email"/>
+<button class="px-8 py-4 rounded-full signature-gradient text-on-primary text-lg font-medium hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" type="submit">
+                            Get early access
+                        </button>
+</form>
+<p class="hidden mt-4 text-primary font-medium text-sm animate-pulse" id="success-msg">
+                        You’re in. We’ll let you know when Kinly is ready.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="py-60 px-6 bg-surface">
+<div class="max-w-5xl mx-auto quote-gradient-soft py-32 px-12 md:px-24 rounded-[5rem] text-center border border-primary/5">
+<span class="material-symbols-outlined text-primary/30 mb-12 scale-[2.5]" data-weight="fill">format_quote</span>
+<h2 class="font-serif text-5xl md:text-[4.5rem] italic text-on-primary-container mb-12 leading-tight">
+                    “I didn’t have to filter myself here.”
+                </h2>
+<p class="font-serif text-2xl text-primary/50">— A Kinly user</p>
+</div>
+</section>
+<!-- Feature Cards -->
+<section class="py-60">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+<!-- Card 1 -->
+<div class="asymmetric-card-1 bg-white p-14 flex flex-col soft-glow hover:translate-y-[-8px] transition-transform duration-500 border border-black/[0.02]">
+<div class="w-16 h-16 rounded-full bg-primary-container/40 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary">lock</span>
+</div>
+<h3 class="font-serif text-3xl text-on-surface mb-6">Private by default</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+                            Share only with the people you choose. No audience — just your circle.
+                        </p>
+</div>
+<!-- Card 2 -->
+<div class="asymmetric-card-2 bg-tertiary-container/30 p-14 flex flex-col soft-glow hover:translate-y-[-8px] transition-transform duration-500 border border-black/[0.02]">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-on-tertiary-container">auto_awesome</span>
+</div>
+<h3 class="font-serif text-3xl text-on-tertiary-container mb-6">Gentle prompts</h3>
+<p class="font-body text-on-tertiary-container/80 leading-relaxed text-lg">
+                            Thoughtful questions to help you express what you’re feeling, even when words are hard.
+                        </p>
+</div>
+<!-- Card 3 -->
+<div class="asymmetric-card-3 bg-white p-14 flex flex-col soft-glow hover:translate-y-[-8px] transition-transform duration-500 border border-black/[0.02]">
+<div class="w-16 h-16 rounded-full bg-secondary-container/40 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-secondary">favorite</span>
+</div>
+<h3 class="font-serif text-3xl text-on-surface mb-6">Support, not reactions</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+                            Respond with care. Conversations that feel human, not performative.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Positioning Section -->
+<section class="py-60 bg-surface">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+<div class="max-w-3xl">
+<h2 class="font-serif text-6xl md:text-8xl text-on-surface leading-tight mb-12">
+                        Not everything needs an audience.
+                    </h2>
+<p class="font-body text-2xl md:text-3xl text-on-surface-variant leading-relaxed mb-16">
+                        Some things are meant for people who truly know you.
+                    </p>
+<div class="inline-flex items-center gap-4 px-10 py-6 bg-primary/5 rounded-2xl border-l-4 border-primary/20">
+<p class="font-serif text-2xl italic text-primary-dim">“I felt heard for the first time in years.”</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="max-w-5xl mx-auto px-6 mb-60">
+<div class="bg-primary/95 text-on-primary rounded-3xl p-20 md:p-32 text-center relative overflow-hidden soft-glow">
+<!-- Decorative Glows -->
+<div class="absolute -top-24 -right-24 w-80 h-80 bg-primary-fixed-dim/10 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-24 -left-24 w-80 h-80 bg-tertiary-fixed-dim/10 rounded-full blur-[100px]"></div>
+<h2 class="font-serif text-5xl md:text-7xl mb-10 relative z-10 leading-tight">Ready to share, <br/>without pressure?</h2>
+<p class="font-body text-xl text-primary-fixed mb-16 relative z-10 max-w-xl mx-auto opacity-80 leading-relaxed">
+                    A quieter space for honest thoughts and real connection.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center relative z-10">
+<button class="px-12 py-5 rounded-full bg-white text-primary text-xl font-medium hover:bg-surface-container transition-all duration-400 soft-glow active:scale-95">
+                        Start sharing
+                    </button>
+<button class="px-12 py-5 rounded-full border border-white/30 text-white text-xl font-medium hover:bg-white/10 transition-colors duration-400 active:scale-95">
+                        Sign in
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full rounded-t-[4rem]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-24 max-w-7xl mx-auto">
+<div class="mb-10 md:mb-0">
+<span class="text-3xl font-serif text-[#5a5b87] italic">Where being real feels easy.</span>
+<p class="text-xs font-body text-[#aeb2b6] mt-4 tracking-widest uppercase">© Kinly. A space to let go.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-body text-sm tracking-wide text-[#aeb2b6] hover:text-[#5a5b87] transition-colors duration-400 font-semibold" href="#">Journal</a>
+<a class="font-body text-sm tracking-wide text-[#aeb2b6] hover:text-[#5a5b87] transition-colors duration-400" href="#">Reflections</a>
+<a class="font-body text-sm tracking-wide text-[#aeb2b6] hover:text-[#5a5b87] transition-colors duration-400" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>

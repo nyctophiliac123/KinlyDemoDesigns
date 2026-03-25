@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinly | A space for what you don’t usually share</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#0c0e10",
+              "on-secondary-container": "#3f5466",
+              "tertiary-fixed-dim": "#ded6ee",
+              "outline": "#777b7f",
+              "on-secondary-fixed-variant": "#495e71",
+              "surface-bright": "#f9f9fb",
+              "surface": "#f9f9fb",
+              "on-error": "#fff7f7",
+              "secondary-container": "#cfe5fc",
+              "background": "#f9f9fb",
+              "primary-dim": "#4e4f7b",
+              "on-secondary-fixed": "#2c4153",
+              "outline-variant": "#aeb2b6",
+              "primary": "#5a5b87",
+              "on-primary-fixed": "#2d2e57",
+              "secondary-fixed": "#cfe5fc",
+              "error-dim": "#6b0221",
+              "on-tertiary-fixed": "#454053",
+              "secondary": "#4c6174",
+              "surface-container-low": "#f2f4f6",
+              "tertiary-fixed": "#ede4fd",
+              "primary-fixed": "#cbcafe",
+              "tertiary-container": "#ede4fd",
+              "error-container": "#f97386",
+              "on-error-container": "#6e0523",
+              "secondary-fixed-dim": "#c1d7ed",
+              "surface-container": "#eceef1",
+              "on-secondary": "#f6f9ff",
+              "primary-fixed-dim": "#bdbcef",
+              "secondary-dim": "#405568",
+              "surface-variant": "#dfe3e7",
+              "error": "#a8364b",
+              "on-primary": "#fbf7ff",
+              "on-tertiary-fixed-variant": "#615c70",
+              "tertiary": "#615c70",
+              "surface-container-high": "#e6e8ec",
+              "on-primary-fixed-variant": "#4a4b76",
+              "tertiary-dim": "#555064",
+              "on-surface": "#2e3336",
+              "on-background": "#2e3336",
+              "surface-dim": "#d7dadf",
+              "on-tertiary": "#fdf7ff",
+              "on-tertiary-container": "#575266",
+              "surface-container-highest": "#dfe3e7",
+              "on-surface-variant": "#5b6063",
+              "surface-tint": "#5a5b87",
+              "inverse-on-surface": "#9c9d9f",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#41416c",
+              "primary-container": "#cbcafe",
+              "inverse-primary": "#cbcafe"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif-text { font-family: 'Newsreader', serif; }
+        .asymmetric-shape-1 { border-radius: 3rem 1rem 3rem 1.5rem; }
+        .asymmetric-shape-2 { border-radius: 1.5rem 3rem 1rem 3rem; }
+        .glass-card { backdrop-filter: blur(12px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen selection:bg-primary-fixed-dim">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-indigo-900 dark:text-indigo-100" data-icon="spa">spa</span>
+<span class="text-2xl font-serif italic text-indigo-900 dark:text-indigo-100">Kinly</span>
+</div>
+<div class="md:flex hidden gap-8">
+<a class="text-indigo-950 dark:text-white font-semibold hover:scale-105 transition-transform duration-400" href="#">Start sharing</a>
+<a class="text-slate-500 dark:text-slate-400 hover:scale-105 transition-transform duration-400" href="#">Sign in</a>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 md:px-12 max-w-5xl mx-auto space-y-20">
+<!-- Hero Section -->
+<section class="relative py-12 flex flex-col items-center text-center space-y-8">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-[80px] -z-10"></div>
+<div class="absolute top-20 -right-12 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-[100px] -z-10"></div>
+<div class="space-y-4 max-w-2xl">
+<h1 class="serif-text text-5xl md:text-7xl leading-tight text-on-surface font-light tracking-tight">
+                    A space for what you don’t usually share
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant font-body font-light px-4">
+                    Connect with people who listen, not judge.
+                </p>
+</div>
+<!-- Hero Illustration (Placeholder representation) -->
+<div class="w-full max-w-lg aspect-[4/3] bg-gradient-to-br from-secondary-container/50 to-tertiary-container/40 asymmetric-shape-1 overflow-hidden relative group">
+<img alt="Two people sitting peacefully together" class="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-[2000ms]" data-alt="Calm illustration of two people sitting peacefully in nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfr7eb665nWKs2wStkao8Ey4owd3j9JbxWo6h4pj7MueV-Vi1n4qZ15WzBGt5pfRkyPC6qyZhy-lSQX8__QQ3FJJMBGprySL-gpGU27SRGw8jCJhA9ZmWhYr59v_Fpd3KNrXYC4nl_Td_qEcpu4yg6ieJJBOrfBYeOV7WP0LZ5i1bFlukr8Ve4tGRe9JkVKBUl0PqO94_s257MnE6h3NzlmV3DVJmZ4o-RNqenUyUyp9MkaL7_7kgvMGcM_xjFQ3Hv8LGgRWJMhUrG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+</section>
+<!-- The Pulse (Reflective Moment) -->
+<section class="flex flex-col items-center justify-center py-12 space-y-6">
+<div class="relative">
+<div class="w-24 h-24 rounded-full bg-gradient-to-br from-secondary-fixed to-tertiary-fixed blur-xl animate-pulse opacity-60"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="self_improvement">self_improvement</span>
+</div>
+</div>
+<p class="serif-text italic text-xl text-primary text-center max-w-xs">
+                "Here, your vulnerability is your greatest strength."
+            </p>
+</section>
+<!-- Philosophy Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 asymmetric-shape-2 space-y-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="visibility_off">visibility_off</span>
+</div>
+<h3 class="serif-text text-3xl text-indigo-900">Quiet Anonymity</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    Share your thoughts without the pressure of a profile. No followers, no metrics, just pure expression in a sanctuary built for honesty.
+                </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-tertiary-container p-8 asymmetric-shape-1 space-y-4">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="serif-text text-2xl text-on-tertiary-container">Guided Reflection</h3>
+<p class="text-on-tertiary-container/80 text-sm leading-relaxed">
+                    Gentle prompts to help you unspool your day and find the words you didn't know you had.
+                </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-8 asymmetric-shape-1 space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="favorite">favorite</span>
+<h3 class="serif-text text-2xl text-on-primary-container">Soft Support</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Respond to others with meaningful "resonance" tokens instead of rapid-fire likes or comments.
+                </p>
+</div>
+<!-- Card 4 (Horizontal) -->
+<div class="md:col-span-2 bg-surface-container-highest p-10 rounded-xl flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1 space-y-4">
+<h3 class="serif-text text-3xl text-indigo-900 italic">"I felt heard for the first time in years."</h3>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest">— A Kinly Member</p>
+</div>
+<div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Member portrait" class="w-full h-full object-cover grayscale opacity-60" data-alt="Soft focused portrait of a calm woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw4NJEjQiZIrKcyoh9Y_vMkpt0Rn22uzQQVhh0H3LwX2J-HAVDWIAtjBQCKE0fGr8IDGPY4heSePCEd7uzXXqmEuV5VLOUEQxkR0z3GABLVVJIPKLHZPSko2R7HhhO7AkERKET-eUtjUSDbmkAYZ1Y-bv75Q2Mu3u7dqSj8x5ycseGIFDZOr3bxBWnNjwOEndpAtqdjna5SH6c5nWOCLckWupux3B2EdVtEQQ7LBq7Vzkd3dTTLaHjbzUPe2VJ3nhBAus_bf8nK2IX"/>
+</div>
+</div>
+</section>
+<!-- Final CTA Area -->
+<section class="py-20 text-center space-y-10">
+<h2 class="serif-text text-4xl md:text-5xl text-on-surface max-w-xl mx-auto">
+                Ready to unburden your thoughts?
+            </h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+<button class="w-full md:w-auto px-10 py-5 bg-gradient-to-br from-[#5a5b87] to-[#bdbcef] text-white rounded-full text-lg font-medium hover:scale-105 transition-transform duration-400 active:scale-95 shadow-[0_20px_40px_rgba(90,91,135,0.15)]">
+                    Start sharing
+                </button>
+<button class="w-full md:w-auto px-10 py-5 bg-surface-container-highest text-on-surface rounded-full text-lg font-medium hover:scale-105 transition-transform duration-400">
+                    Sign in
+                </button>
+</div>
+<p class="text-on-surface-variant font-label text-xs">Where being real feels easy.</p>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-8 pt-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_-4px_32px_rgba(46,51,54,0.04)] rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#B2B1CF] to-[#bdbcef] text-white rounded-full px-6 py-2 transition-all duration-400 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-xs font-label mt-1">Start sharing</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-6 py-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-400" href="#">
+<span class="material-symbols-outlined" data-icon="login">login</span>
+<span class="text-xs font-label mt-1">Sign in</span>
+</a>
+</nav>
+<!-- Footer Decoration -->
+<footer class="py-12 px-6 text-center border-t border-transparent">
+<div class="flex justify-center gap-4 mb-4">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<div class="w-2 h-2 rounded-full bg-tertiary-container"></div>
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+</div>
+<p class="text-on-surface-variant/40 text-[10px] uppercase tracking-[0.2em] font-label">
+            © 2024 Kinly Digital Sanctuary. Intention over attention.
+        </p>
+</footer>
+</body></html>

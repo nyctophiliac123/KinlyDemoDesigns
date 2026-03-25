@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinly | Digital Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#3f5466",
+                        "on-tertiary-container": "#575266",
+                        "on-tertiary": "#fdf7ff",
+                        "tertiary-fixed-dim": "#ded6ee",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-fixed": "#2c4153",
+                        "error": "#a8364b",
+                        "on-primary-container": "#41416c",
+                        "secondary": "#4c6174",
+                        "on-error-container": "#6e0523",
+                        "tertiary-fixed": "#ede4fd",
+                        "on-primary": "#fbf7ff",
+                        "secondary-fixed-dim": "#c1d7ed",
+                        "surface-container-high": "#e6e8ec",
+                        "secondary-container": "#cfe5fc",
+                        "primary-fixed": "#cbcafe",
+                        "tertiary-container": "#ede4fd",
+                        "on-error": "#fff7f7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#f6f9ff",
+                        "inverse-surface": "#0c0e10",
+                        "surface-container-highest": "#dfe3e7",
+                        "primary": "#5a5b87",
+                        "on-secondary-fixed-variant": "#495e71",
+                        "primary-dim": "#4e4f7b",
+                        "primary-container": "#cbcafe",
+                        "inverse-on-surface": "#9c9d9f",
+                        "primary-fixed-dim": "#bdbcef",
+                        "inverse-primary": "#cbcafe",
+                        "secondary-dim": "#405568",
+                        "surface-tint": "#5a5b87",
+                        "surface": "#f9f9fb",
+                        "on-background": "#2e3336",
+                        "background": "#f9f9fb",
+                        "outline-variant": "#aeb2b6",
+                        "surface-container": "#eceef1",
+                        "surface-dim": "#d7dadf",
+                        "tertiary": "#615c70",
+                        "error-container": "#f97386",
+                        "secondary-fixed": "#cfe5fc",
+                        "tertiary-dim": "#555064",
+                        "outline": "#777b7f",
+                        "error-dim": "#6b0221",
+                        "on-tertiary-fixed-variant": "#615c70",
+                        "surface-variant": "#dfe3e7",
+                        "on-primary-fixed": "#2d2e57",
+                        "on-surface": "#2e3336",
+                        "on-primary-fixed-variant": "#4a4b76",
+                        "on-tertiary-fixed": "#454053",
+                        "on-surface-variant": "#5b6063",
+                        "surface-bright": "#f9f9fb"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+        }
+        .organic-pulse {
+            box-shadow: 0 0 0 0 rgba(203, 202, 254, 0.4);
+            animation: pulse-ring 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(203, 202, 254, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 40px rgba(203, 202, 254, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(203, 202, 254, 0); }
+        }
+        .bg-soft-gradient {
+            background: linear-gradient(135deg, #f9f9fb 0%, #ede4fd 50%, #cfe5fc 100%);
+            background-size: 200% 200%;
+            animation: slow-flow 15s ease-in-out infinite;
+        }
+        @keyframes slow-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body bg-background text-on-surface overflow-hidden">
+<!-- Splash Screen Container -->
+<main class="relative h-screen w-full flex flex-col items-center justify-center bg-soft-gradient px-8">
+<!-- Sanctuary Symbol (Organic Shape) -->
+<div class="mb-12 relative flex items-center justify-center">
+<!-- Outer Pulse -->
+<div class="organic-pulse absolute w-32 h-32 rounded-full bg-primary-container/20"></div>
+<!-- Inner Shape: Digital Sanctuary Icon -->
+<div class="relative z-10 w-16 h-16 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="spa">spa</span>
+</div>
+</div>
+<!-- Brand Identity -->
+<div class="text-center space-y-4">
+<h1 class="font-headline italic text-6xl md:text-7xl text-primary tracking-tight">
+                Kinly
+            </h1>
+</div>
+<!-- Tagline / Bottom Footer -->
+<div class="absolute bottom-16 left-0 w-full text-center px-6">
+<p class="font-body text-sm md:text-base text-on-surface-variant tracking-widest uppercase opacity-60">WHERE BEING REAL FEELS EASY.</p>
+</div>
+<!-- Decorative Elements: Ambient Softness Orbs -->
+<div class="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-tertiary-fixed-dim/30 blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-secondary-fixed-dim/30 blur-[100px] pointer-events-none"></div>
+</main>
+<!-- Implicit Screen Reader Context: The page is a splash screen for the Kinly sanctuary app -->
+<div class="sr-only">
+        Splash screen for Kinly. A digital sanctuary. Private by design.
+    </div>
+</body></html>
